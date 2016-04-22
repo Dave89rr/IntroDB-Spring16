@@ -26,22 +26,33 @@ if($numrows != 0){
 		if($login_password==$dbpass){
 			echo "     ";
 
+			echo "<h1>";
 			echo "Welcome ".$dbfirstname."!";
-			echo "<a href = 'employeepage.html'>Click here to be redirected to the Employees Page. </a>";
-
+			echo "</h1>";
+			echo "<br>";
+			// echo "<a href = 'employeepage.html'>Click here to be redirected to the Employees Page. </a>";
+			echo "<meta http-equiv='refresh' content='2;url=employeepage.html'/>";
 		}else{
-			echo "your password is incorrect!";
+			echo "<h1>";
+			echo "Your password is incorrect!";
+			echo "</h1>";
+			echo "<meta http-equiv='refresh' content='1;url=login.html'/>";
 
 		}
 	}else{
-
-		echo "your email is incorrect!";
+		echo "<h1>";
+		echo "Your email is incorrect!";
+		echo "</h1>";
+		echo "<meta http-equiv='refresh' content='1;url=login.html'/>";
 
 	}
 
 }else{
 
-echo "Invalid credentials! If you are not registered please register bellow...";
+echo "<h1>";
+echo "Invalid credentials!";
+echo "</h1>";
+echo "<meta http-equiv='refresh' content='1;url=login.html'/>";
 
 }
 }else{
