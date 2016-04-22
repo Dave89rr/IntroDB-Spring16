@@ -3,18 +3,39 @@
 <title>Add a new client</title>
 </head>
 <body>
+	<h1>New Client Form</h1>
 	<form action="processingclients.php" method="post">
-	<p>First Name: <input type="text" name="first_name" size="20" maxlength="50" /></p>
-	<p>Last Name: <input type="text" name="last_name" size="20" maxlength="50" /></p>
-	<p>Address: <input type="text" name= "address" size="20" maxlength="50" /></p>
-    <p>City: <input type="text" name= "city" size="20" maxlength="50" /></p>
-    <p>State: <input type="text" name="state" size="20" maxlength="50" /></p>
-	<p>ZIP: <input type="text" name="zip" size="20" maxlength="50" /></p>
-	<p>Phone: <input type="text" name="phone" size="20" maxlength="50" /></p>
-	<p>CellPhone: <input type="text" name="cellphone" size="20" maxlength="50" /></p>
-	<p>Referal: <input type="text" name="referal" size="20" maxlength="50" /></p>
-		
-	<p><input type="submit" name="submit" value="Submit" /></p>	   
+		<table>
+			<tr>
+				<td>*First Name:</td><td><input type="text" name="FIRSTNAME" size="20" maxlength="50" /></td>
+			</tr>
+			<tr>
+				<td>*Last Name:</td><td><input type="text" name="LASTNAME" size="20" maxlength="50" /></td>
+			</tr>
+			<tr>
+				<td>*Address:</td><td><input type="text" name= "ADDRESS" size="20" maxlength="50" /></td>
+			</tr>
+			<tr>
+				<td>City:</td><td><input type="text" name= "CITY" size="20" maxlength="50" /></td>
+			</tr>
+			<tr>
+				<td>State:</td><td><input type="text" name="STATE" size="20" maxlength="50" /></td>
+			</tr>
+			<tr>
+				<td>ZIP:</td><td><input type="text" name="ZIP" size="20" maxlength="50" /></td>
+			</tr>
+			<tr>
+				<td>Phone:</td><td><input type="text" name="PHONE" size="20" maxlength="50"/></td>
+			</tr>
+			<tr>
+				<td>CellPhone:</td><td><input type="text" name="CELLPHONE" size="20" maxlength="50" /></td>
+			</tr>
+			<tr>
+				<td>Email:</td><td><input type="text" name="EMAIL" size="20" maxlength="100"/></td>
+			</tr>
+			<tr>
+				<td></td><td><input type="submit" name="submit" value="Submit" /></td>
+			</tr>
 	</form>
 </body>
 </html>
