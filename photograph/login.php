@@ -1,4 +1,5 @@
 <?php
+session_start();
 error_reporting(0);
 include("connection.php");
 //grab values email and password from login form
@@ -17,25 +18,21 @@ if($numrows != 0){
 
 		$dbemail = $row['EMPEMAIL']; //must matching with the field name in your database table;
 		$dbpass = $row['EMPPASS'];
-		$dbfirstname = $row['EMPFIRSTNAME'];
+		$_SESSION["Username"] = $row['EMPFIRSTNAME'];
 
 		}
 //create condition to check if email and password are equal to the returned row
 
 	if($login_email==$dbemail){
 		if($login_password==$dbpass){
-			echo "     ";
-
-			echo "<h1>";
-			echo "Welcome ".$dbfirstname."!";
-			echo "</h1>";
-			echo "<br>";
-			// echo "<a href = 'employeepage.html'>Click here to be redirected to the Employees Page. </a>";
-			echo "<meta http-equiv='refresh' content='2;url=employeepage.html'/>";
+			$_SESSION["loggedIn"] = true;
+			echo "<meta http-equiv='refresh' content='0;url=employeepage.php'/>";
 		}else{
 			echo "<h1>";
 			echo "Your password is incorrect!";
 			echo "</h1>";
+			session_unset();
+			session_destroy();
 			echo "<meta http-equiv='refresh' content='1;url=login.html'/>";
 
 		}
@@ -43,6 +40,8 @@ if($numrows != 0){
 		echo "<h1>";
 		echo "Your email is incorrect!";
 		echo "</h1>";
+		session_unset();
+		session_destroy();
 		echo "<meta http-equiv='refresh' content='1;url=login.html'/>";
 
 	}
@@ -52,12 +51,17 @@ if($numrows != 0){
 echo "<h1>";
 echo "Invalid credentials!";
 echo "</h1>";
+session_unset();
+session_destroy();
 echo "<meta http-equiv='refresh' content='1;url=login.html'/>";
 
 }
 }else{
 
 	echo "Please Login...";
+	session_unset();
+	session_destroy();
+	echo "<meta http-equiv='refresh' content='1;url=login.html'/>";
 
 }
 ?>
