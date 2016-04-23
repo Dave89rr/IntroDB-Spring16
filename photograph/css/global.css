@@ -1,11 +1,12 @@
-.indexBody
-{
-  position: absolute;
-  top: -10px;
-  left: -10px;
-  overflow-x: hidden;
-  overflow-y: hidden;
-}
+/* ---------------------------*/
+/* ----->>> =GLOBAL <<<-------*/
+/* ---------------------------*/
+
+
+
+/* ---------------------------*/
+/* ----->>> =HEADERS <<<------*/
+/* ---------------------------*/
 
 h1
 {
@@ -14,20 +15,10 @@ h1
   letter-spacing:2px;
 }
 
-.h1index
-{
-  color: white;
-  position: absolute;
-  top: 0px;
-  left: 30px;
-  font-size: 2.5em;
-}
-
 h3
 {
   font-family: sans-serif;
 }
-
 a,p
 {
   font-family:Arial;
@@ -35,6 +26,7 @@ a,p
   font-style:normal;
   font-weight:normal;
 }
+
 div.relative
 {
   font-family:Arial;
@@ -43,33 +35,6 @@ div.relative
   top: 65px;
   right: 46%;
   align-self: center;
-}
-.navbutton
-{
-  background-color: #4CAF50;
-  border: none;
-  width: 50px;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  -webkit-transition-duration: 0.4s;
-  transition-duration: 0.4s;
-  cursor: pointer;
-  border: 2px solid #4CAF50;
-  position: absolute;
-  top: -2px;
-  right: 10%;
-  padding: 7px;
-  border-radius: 10%;
-}
-.navbutton:hover {
-    background-color: white;
-    color: black;
-    border: 2px solid #4CAF50;
 }
 
 .button {
@@ -107,18 +72,4 @@ div.relative
   background-color: white;
   border: 2px solid #008CBA;
   color: black;
-}
-.mySlides
-{
-  display: none;
-}
-.slideshow
-{
-  max-width: 100%;
-  z-index: -10;
-  position: absolute;
-  top: -10%;
-  left: -10%;
-  width: 100px;
-  height: 100px;
 }

@@ -11,12 +11,19 @@ echo "</div>";
 <!DOCTYPE html>
 <html>
 <head>
-  <link rel="stylesheet" type="text/css" href="css/style.css"/>
+  <link rel="stylesheet" type="text/css" href="css/master.css"/>
   <title>Photographers4U</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
   <h1>Employees Page</h1>
+  <table class="navbar">
+    <tr>
+      <td><a href="employeepage.php" id="navbutton">Home</a></td>
+      <td><a href="logout.php" id="navbutton">Logout</a></td>
+    </tr>
+  </table>
+
   <br><br>
     <table align="center">
       <tr>

@@ -1,6 +1,6 @@
 <html>
   <head>
-    <link rel="stylesheet" type="text/css" href="../css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/master.css"/>
     <title>Add a new venue</title>
   </head>
   <body>

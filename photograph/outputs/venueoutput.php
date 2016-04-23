@@ -1,6 +1,6 @@
 <?php
     include("../connection.php");
-    echo "<link rel='stylesheet' type='text/css' href='../css/style.css'/>";
+    echo "<link rel='stylesheet' type='text/css' href='../css/master.css'/>";
     echo "<h1>Venues</h1>";
   	echo "<table border='1' align='center'>";
   	echo "<tr>";

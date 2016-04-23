@@ -1,0 +1,5 @@
+/*Master CSS*/
+@import url("global.css");
+@import url("structure.css");
+@import url("navigation.css");
+@import url("index.css");
