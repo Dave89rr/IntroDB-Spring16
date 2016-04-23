@@ -3,7 +3,7 @@
 <title>Add a new cameras</title>
 </head>
 <body>
-	<h1>New Client Form</h1>
+	<h1>New Camera Form</h1>
 	<form action="processingcameras.php" method="post">
 		<table>
 			<tr>
