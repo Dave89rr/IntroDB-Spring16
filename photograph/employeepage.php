@@ -4,6 +4,9 @@ if(!isset($_SESSION["loggedIn"])) {
     echo "<meta http-equiv='refresh' content='1;url=login.html'/>";
     die('Access denied!');
 }
+echo "<div class='relative'>Welcome, ";
+echo $_SESSION["Username"];
+echo "</div>";
 ?>
 <!DOCTYPE html>
 <html>
@@ -14,7 +17,7 @@ if(!isset($_SESSION["loggedIn"])) {
 </head>
 <body>
   <h1>Employees Page</h1>
-  <p align="center"> Welcome <?php $_SESSION["Username"];?></p>
+  <br><br>
     <table align="center">
       <tr>
         <td><h3>Cameras</h3></td>

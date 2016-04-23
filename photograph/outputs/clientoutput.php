@@ -1,9 +1,9 @@
 <?php
 
     include("../connection.php");
-    echo "<br>";
+    echo "<link rel='stylesheet' type='text/css' href='../css/style.css'/>";
     echo "<h1>Clients</h1>";
-  	echo "<table border='1'>";
+  	echo "<table border='1' align='center'>";
   	echo "<tr>";
   	echo "<td><b>Client ID</b></td>";
   	echo "<td><b>First Name</b></td>";
