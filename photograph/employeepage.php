@@ -2,7 +2,8 @@
 session_start();
 if(!isset($_SESSION["loggedIn"])) {
     echo "<meta http-equiv='refresh' content='1;url=login.html'/>";
-    die('Access denied!');
+    echo "<h1 align='center'>Access Denied!</h1>";
+    die('');
 }
 echo "<div class='relative'>Welcome, ";
 echo $_SESSION["Username"];

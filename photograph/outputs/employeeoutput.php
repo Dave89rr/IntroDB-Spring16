@@ -29,7 +29,8 @@ if(!isset($_SESSION["loggedIn"])) {
     echo "<td><b>Email</b></td>";
   	echo "</tr>";
     $r = mysqli_query($dbc, "SELECT * FROM employees");
-    
+    $numrows = mysqli_num_rows($r);
+
 if($numrows != 0){
     while ( $row = mysqli_fetch_array($r))
     {
@@ -45,7 +46,8 @@ if($numrows != 0){
         echo "<td>".$row['EMPCELLPHONE']."</td>";
         echo "<td>".$row['EMPEMAIL']."</td>";
     		echo "</tr>";
-    } else {
+    }
+  } else {
     echo "</table>";
     echo "<h1>";
     echo "No Data Found!";
