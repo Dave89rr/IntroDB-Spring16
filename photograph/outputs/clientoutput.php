@@ -7,6 +7,12 @@ if(!isset($_SESSION["loggedIn"])) {
 }
 
     include("../connection.php");
+    echo   "<table class='navbar'>
+              <tr>
+                <td><a href='../employeepage.php' id='navbutton'>Home</a></td>
+                <td><a href='../logout.php' id='navbutton'>Logout</a></td>
+              </tr>
+            </table>";
     echo "<link rel='stylesheet' type='text/css' href='../css/master.css'/>";
     echo "<h1>Clients</h1>";
   	echo "<table border='1' align='center'>";
@@ -23,31 +29,33 @@ if(!isset($_SESSION["loggedIn"])) {
     echo "<td><b>Referral</b></td>";
     echo "<td><b>Email</b></td>";
   	echo "</tr>";
-    $r = mysqli_query($dbc, "SELECT * FROM employees");
+    $r = mysqli_query($dbc, "SELECT * FROM clients");
+    $numrows = mysqli_num_rows($r);
 
-
+if($numrows != 0){
     while ( $row = mysqli_fetch_array($r))
     {
         echo "<tr>";
     		echo "<td>".$row['CLIENTID']."</td>";
-    		echo "<td>".$row['EMPFIRSTNAME']."</td>";
-        echo "<td>".$row['EMPLASTNAME']."</td>";
-        echo "<td>".$row['EMPADDRESS']."</td>";
-        echo "<td>".$row['EMPCITY']."</td>";
-        echo "<td>".$row['EMPSTATE']."</td>";
-        echo "<td>".$row['EMPZIP']."</td>";
-        echo "<td>".$row['EMPPHONE']."</td>";
-        echo "<td>".$row['EMPCELLPHONE']."</td>";
+    		echo "<td>".$row['FIRSTNAME']."</td>";
+        echo "<td>".$row['LASTNAME']."</td>";
+        echo "<td>".$row['ADDRESS']."</td>";
+        echo "<td>".$row['CITY']."</td>";
+        echo "<td>".$row['STATE']."</td>";
+        echo "<td>".$row['ZIP']."</td>";
+        echo "<td>".$row['PHONE']."</td>";
+        echo "<td>".$row['CELLPHONE']."</td>";
         echo "<td>".$row['REFERRAL']."</td>";
-        echo "<td>".$row['EMPEMAIL']."</td>";
+        echo "<td>".$row['EMAIL']."</td>";
     		echo "</tr>";
-        // echo $row['EmployeeID']."/".$row['EmpFirstName']."/".$row['EmpLastName']."/".$row['EmpAdress']."/".$row['EmpCity']."/".$row['EmpState']."/".$row['EmpZip']."/".$row['EmpPhone']."/".$row['EmpCellPhone'];
-        // echo "<br>";
     }
+  } else {
+  echo "</table>";
+  echo "<h1>";
+  echo "No Data Found!";
+  echo "</h1>";
+  echo "<meta http-equiv='refresh' content='2;url=../employeepage.php'/>";
+  }
 mysqli_close($dbc); //always close the connection for security
 echo "</table>";
-echo "<br><br>";
-// echo "database connection closed.";
-
-
 ?>
