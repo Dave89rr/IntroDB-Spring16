@@ -5,7 +5,7 @@
     echo "<h1>Clients</h1>";
   	echo "<table border='1'>";
   	echo "<tr>";
-  	echo "<td><b>Client ID</b></td>";
+  	echo "<td><b>ID</b></td>";
   	echo "<td><b>First Name</b></td>";
     echo "<td><b>Last Name</b></td>";
     echo "<td><b>Address</b></td>";
