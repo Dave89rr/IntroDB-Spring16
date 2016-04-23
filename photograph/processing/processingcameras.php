@@ -12,7 +12,7 @@ if(!empty($SCount) && !empty($PriLense))
 		mysqli_query($dbc, "INSERT INTO CAMERAS('CAMERAID', 'SHOTCOUNT', 'CAMERATYPE', 'BATTERIES', 'PRIMARYLENSE')
 		VALUES ('$SCount', '$CamType', '$NumBat', '$PriLense')");
 		echo " row  inserted, everything worked fine!";
-		echo "<a href = '../employeepage.html'>Click here to be redirected to the employee Page. </a>";
+		echo "<a href = '../employeepage.php'>Click here to be redirected to the employee Page. </a>";
 }
 	else{
 			echo "ERROR: you left some values in blank!";

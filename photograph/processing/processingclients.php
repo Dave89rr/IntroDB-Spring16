@@ -15,9 +15,9 @@ $EMAIL = $_POST['EMAIL'];
 if(!empty($FNAME) && !empty($LNAME) && !empty($ADDRESS) && !empty($CITY) && !empty($ZIP) && !empty($PHONE) && !empty($EMAIL))
 {
 		mysqli_query($dbc, "INSERT INTO client('FIRSTNAME', 'LASTNAME', 'ADDRESS', 'CITY', 'STATE', 'ZIP', 'PHONE', 'CELLPHONE', 'EMAIL')
-		VALUES ('$FNAME', '$LNAME', '$ADDRESS', '$CITY', '$STATE', '$ZIP', '$PHONE', '$CELLPHONE','$REFERAL')");
+		VALUES ('$FNAME', '$LNAME', '$ADDRESS', '$CITY', '$STATE', '$ZIP', '$PHONE', '$CELLPHONE','$REFERRAL')");
 		echo " row  inserted, everything worked fine!";
-		echo "<a href = '../employeepage.html'>Click here to be redirected to the employee Page. </a>";
+		echo "<a href = '../employeepage.php'>Click here to be redirected to the employee Page. </a>";
 }
 	else{
 			echo "ERROR: you left some values in blank!";
