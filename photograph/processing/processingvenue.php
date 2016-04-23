@@ -16,7 +16,7 @@ if(!empty($VA) && !empty($VS) && !empty($VZ) && !empty($VN) && !empty($VP))
         mysqli_query($dbc, "INSERT INTO VENUES(VENUEADDRESS, VENUECITY, VENUESTATE, VENUEZIP,  VENUENUMBER, VENUECONTACTNAME, VENUETYPE )
         VALUES ('$VA', '$VC', '$VS', '$VZ','$VN','$VCN','$VP')");
         echo " row  inserted, everything worked fine!";
-        echo "<a href = '../login.html'>Click here to be redirected to the Login Page. </a>";
+        echo "<a href = '../employeepage.html'>Click here to be redirected to the Employee Page. </a>";
 }
     else{
             echo "ERROR: you left some values in blank!";

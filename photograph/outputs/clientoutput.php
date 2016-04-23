@@ -1,6 +1,6 @@
 <?php
 
-    include("connection.php");
+    include("../connection.php");
     echo "<br>";
     echo "<h1>Clients</h1>";
   	echo "<table border='1'>";
