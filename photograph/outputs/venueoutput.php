@@ -1,7 +1,8 @@
 <?php
     include("../connection.php");
+    echo "<link rel='stylesheet' type='text/css' href='../css/style.css'/>";
     echo "<h1>Venues</h1>";
-  	echo "<table border='1'>";
+  	echo "<table border='1' align='center'>";
   	echo "<tr>";
   	echo "<td><b>ID</b></td>";
   	echo "<td><b>Address</b></td>";
