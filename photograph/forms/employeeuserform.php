@@ -1,3 +1,11 @@
+<?php
+session_start();
+if(!isset($_SESSION["loggedIn"])) {
+    echo "<meta http-equiv='refresh' content='1;url=../login.html'/>";
+    echo "<h1 align='center'>Access Denied!</h1>";
+    die('');
+}
+?>
 <html>
 	<head>
 		<link rel="stylesheet" type="text/css" href="../css/master.css"/>

@@ -13,7 +13,7 @@ echo "</div>";
 <head>
   <link rel="stylesheet" type="text/css" href="css/master.css"/>
   <title>Photographers4U</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
 </head>
 <body>
   <h1>Employees Page</h1>

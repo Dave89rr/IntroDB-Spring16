@@ -2,12 +2,6 @@
 /* ----->>> =GLOBAL <<<-------*/
 /* ---------------------------*/
 
-
-
-/* ---------------------------*/
-/* ----->>> =HEADERS <<<------*/
-/* ---------------------------*/
-
 h1
 {
   text-align:center;
@@ -19,6 +13,7 @@ h3
 {
   font-family: sans-serif;
 }
+
 a,p
 {
   font-family:Arial;
@@ -67,6 +62,7 @@ div.relative
   background-color: #008CBA;
   color: white;
 }
+
 .button1:hover
 {
   background-color: white;
