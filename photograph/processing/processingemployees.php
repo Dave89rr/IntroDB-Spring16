@@ -1,6 +1,6 @@
 
 <?php
-include('connection.php');
+include('../connection.php');
 if ($_SERVER['REQUEST_METHOD'] == 'POST'){
 // $EID = $_POST['EMPLOYEEID'];
 $EFN = $_POST['EMPFIRSTNAME'];
@@ -20,7 +20,7 @@ if(!empty($EFN) && !empty($ELN) && !empty($EA) && !empty($EZ) && !empty($ECP) &&
         mysqli_query($dbc, "INSERT INTO EMPLOYEES(EMPFIRSTNAME, EMPLASTNAME, EMPADDRESS, EMPCITY,  EMPSTATE, EMPZIP, EMPPHONE, EMPCELLPHONE, EMPEMAIL, EMPPASS )
         VALUES ('$EFN', '$ELN', '$EA', '$EC','$ES','$EZ','$EP','$ECP', '$EEM', '$EPAS')");
         echo " row  inserted, everything worked fine!";
-        echo "<a href = 'employeepage.html'>Click here to be redirected to the employee Page. </a>";
+        echo "<a href = '../employeepage.html'>Click here to be redirected to the employee Page. </a>";
 }
     else{
             echo "ERROR: you left some values in blank!";

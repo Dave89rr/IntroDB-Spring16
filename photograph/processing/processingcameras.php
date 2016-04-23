@@ -1,5 +1,5 @@
 <?php
-include('connection.php');
+include('../connection.php');
 if ($_SERVER['REQUEST_METHOD'] == 'POST'){
 $SCount = $_POST['SHOTCOUNT'];
 $CamType = $_POST['CAMERATYPE'];
@@ -12,7 +12,7 @@ if(!empty($SCount) && !empty($PriLense))
 		mysqli_query($dbc, "INSERT INTO CAMERAS('CAMERAID', 'SHOTCOUNT', 'CAMERATYPE', 'BATTERIES', 'PRIMARYLENSE')
 		VALUES ('$SCount', '$CamType', '$NumBat', '$PriLense')");
 		echo " row  inserted, everything worked fine!";
-		echo "<a href = 'employeepage.html'>Click here to be redirected to the employee Page. </a>";
+		echo "<a href = '../employeepage.html'>Click here to be redirected to the employee Page. </a>";
 }
 	else{
 			echo "ERROR: you left some values in blank!";

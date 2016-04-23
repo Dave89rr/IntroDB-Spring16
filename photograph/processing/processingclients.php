@@ -1,5 +1,5 @@
 <?php
-include('connection.php');
+include('../connection.php');
 if ($_SERVER['REQUEST_METHOD'] == 'POST'){
 $FNAME = $_POST['FIRSTNAME'];
 $LNAME = $_POST['LASTNAME'];
@@ -17,7 +17,7 @@ if(!empty($FNAME) && !empty($LNAME) && !empty($ADDRESS) && !empty($CITY) && !emp
 		mysqli_query($dbc, "INSERT INTO client('FIRSTNAME', 'LASTNAME', 'ADDRESS', 'CITY', 'STATE', 'ZIP', 'PHONE', 'CELLPHONE', 'EMAIL')
 		VALUES ('$FNAME', '$LNAME', '$ADDRESS', '$CITY', '$STATE', '$ZIP', '$PHONE', '$CELLPHONE','$REFERAL')");
 		echo " row  inserted, everything worked fine!";
-		echo "<a href = 'employeepage.html'>Click here to be redirected to the employee Page. </a>";
+		echo "<a href = '../employeepage.html'>Click here to be redirected to the employee Page. </a>";
 }
 	else{
 			echo "ERROR: you left some values in blank!";

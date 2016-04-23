@@ -1,6 +1,6 @@
 <?php
 
-    include("connection.php");
+    include("../connection.php");
     echo "<br>";
     echo "<h1>Employees</h1>";
   	echo "<table border='1'>";
@@ -18,7 +18,6 @@
   	echo "</tr>";
     $r = mysqli_query($dbc, "SELECT * FROM employees");
 
-
     while ( $row = mysqli_fetch_array($r))
     {
         echo "<tr>";
@@ -33,13 +32,7 @@
         echo "<td>".$row['EMPCELLPHONE']."</td>";
         echo "<td>".$row['EMPEMAIL']."</td>";
     		echo "</tr>";
-        // echo $row['EmployeeID']."/".$row['EmpFirstName']."/".$row['EmpLastName']."/".$row['EmpAdress']."/".$row['EmpCity']."/".$row['EmpState']."/".$row['EmpZip']."/".$row['EmpPhone']."/".$row['EmpCellPhone'];
-        // echo "<br>";
     }
 mysqli_close($dbc); //always close the connection for security
 echo "</table>";
-echo "<br><br>";
-// echo "database connection closed.";
-
-
 ?>

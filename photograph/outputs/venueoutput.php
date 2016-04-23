@@ -1,5 +1,5 @@
 <?php
-    include("connection.php");
+    include("../connection.php");
     echo "<h1>Venues</h1>";
   	echo "<table border='1'>";
   	echo "<tr>";
