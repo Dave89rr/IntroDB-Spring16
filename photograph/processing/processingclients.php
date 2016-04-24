@@ -15,7 +15,7 @@ $REFERRAL = $_POST['REFERRAL'];
 //if values are not empty, proceed to store them in the database
 if(!empty($FNAME) && !empty($LNAME) && !empty($ADDRESS) && !empty($CITY) && !empty($ZIP) && !empty($PHONE) && !empty($EMAIL))
 {
-		mysqli_query($dbc, "INSERT INTO clients('FIRSTNAME', 'LASTNAME', 'ADDRESS', 'CITY', 'STATE', 'ZIP', 'PHONE', 'CELLPHONE', 'EMAIL', 'REFERRAL')
+		mysqli_query($dbc, "INSERT INTO clients(FIRSTNAME, LASTNAME, ADDRESS, CITY, STATE, ZIP, PHONE, CELLPHONE, EMAIL, REFERRAL)
 		VALUES ('$FNAME', '$LNAME', '$ADDRESS', '$CITY', '$STATE', '$ZIP', '$PHONE', '$CELLPHONE', '$EMAIL','$REFERRAL')");
 		echo "<meta http-equiv='refresh' content='0;url=../employeepage.php'/>";
 }
