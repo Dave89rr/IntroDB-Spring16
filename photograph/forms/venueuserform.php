@@ -12,6 +12,18 @@ if(!isset($_SESSION["loggedIn"])) {
     <title>Add a new venue</title>
   </head>
   <body>
+    <div class="navbg">
+      <a href="../employeepage.php"><img class="logohorizontal" src="../img/apphotohoriz.png"></a>
+      <table class="navbar">
+        <tr>
+          <td><a href="../employeepage.php" id="navbutton">Home</a></td>
+          <td><a href="../findperson.php" id="navbutton">Find</a></td>
+          <td><a href="../payment.php" id="navbutton">Bill</a></td>
+          <td><a href="../logout.php" id="navbutton">Logout</a></td>
+        </tr>
+      </table>
+    </div>
+    <br><br>
     <h1>New Venue</h1>
     <form action="../processing/processingvenue.php" method="post">
       <table>

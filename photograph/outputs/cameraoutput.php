@@ -6,21 +6,27 @@ if(!isset($_SESSION["loggedIn"])) {
     die('');
 }
 	include("../connection.php");
-  echo   "<table class='navbar'>
-            <tr>
-              <td><a href='../employeepage.php' id='navbutton'>Home</a></td>
-              <td><a href='../logout.php' id='navbutton'>Logout</a></td>
-            </tr>
-          </table>";
+  echo   "<div class='navbg'>
+    <a href='../employeepage.php'><img class='logohorizontal' src='../img/apphotohoriz.png'></a>
+    <table class='navbar'>
+      <tr>
+        <td><a href='../employeepage.php' id='navbutton'>Home</a></td>
+        <td><a href='../findperson.php' id='navbutton'>Find</a></td>
+        <td><a href='../payment.php' id='navbutton'>Bill</a></td>
+        <td><a href='../logout.php' id='navbutton'>Logout</a></td>
+      </tr>
+    </table>
+  </div>
+  <br><br>";
   echo "<link rel='stylesheet' type='text/css' href='../css/master.css'/>";
   echo "<h1>Cameras</h1>";
-	echo "<table border='1' align='center'>";
-	echo "<tr>";
-	echo "<td><b>ID</b></td>";
-	echo "<td><b>Shot Count</b></td>";
-  echo "<td><b>Type</b></td>";
-  echo "<td><b>Batteries</b></td>";
-  echo "<td><b>Main Lense</b></td>";
+	echo "<table border='1' align='center' class='output'>";
+	echo "<tr class='outputrow'>";
+	echo "<th><b>ID</b></th>";
+	echo "<th><b>Shot Count</b></th>";
+  echo "<th><b>Type</b></th>";
+  echo "<th><b>Batteries</b></th>";
+  echo "<th><b>Main Lense</b></th>";
   echo "</tr>";
 	$r = mysqli_query($dbc, "SELECT * FROM Cameras");
   $numrows = mysqli_num_rows($r);
@@ -28,7 +34,7 @@ if(!isset($_SESSION["loggedIn"])) {
 if($numrows != 0){
 	while ( $row = mysqli_fetch_array($r))
 	{
-    echo "</tr>";
+    echo "<tr class='outputrow'>";
 		echo "<td>".$row['CAMERAID']."</td>";
     echo "<td>".$row['SHOTCOUNT']."</td>";
     echo "<td>".$row['CAMERATYPE']."</td>";

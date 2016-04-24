@@ -7,26 +7,32 @@ if(!isset($_SESSION["loggedIn"])) {
 }
 
     include("../connection.php");
-    echo   "<table class='navbar'>
-              <tr>
-                <td><a href='../employeepage.php' id='navbutton'>Home</a></td>
-                <td><a href='../logout.php' id='navbutton'>Logout</a></td>
-              </tr>
-            </table>";
+    echo   "<div class='navbg'>
+      <a href='../employeepage.php'><img class='logohorizontal' src='../img/apphotohoriz.png'></a>
+      <table class='navbar'>
+        <tr>
+          <td><a href='../employeepage.php' id='navbutton'>Home</a></td>
+          <td><a href='../findperson.php' id='navbutton'>Find</a></td>
+          <td><a href='../payment.php' id='navbutton'>Bill</a></td>
+          <td><a href='../logout.php' id='navbutton'>Logout</a></td>
+        </tr>
+      </table>
+    </div>
+    <br><br>";
     echo "<link rel='stylesheet' type='text/css' href='../css/master.css'/>";
     echo "<h1>Employees</h1>";
-  	echo "<table border='1' align='center'>";
-  	echo "<tr>";
-  	echo "<td><b>ID</b></td>";
-  	echo "<td><b>First Name</b></td>";
-    echo "<td><b>Last Name</b></td>";
-    echo "<td><b>Address</b></td>";
-    echo "<td><b>City</b></td>";
-    echo "<td><b>State</b></td>";
-    echo "<td><b>ZIP</b></td>";
-    echo "<td><b>Phone</b></td>";
-    echo "<td><b>Cellphone</b></td>";
-    echo "<td><b>Email</b></td>";
+  	echo "<table border='1' align='center' class='output'>";
+  	echo "<tr class='outputrow'>";
+  	echo "<th><b>ID</b></th>";
+  	echo "<th><b>First Name</b></th>";
+    echo "<th><b>Last Name</b></th>";
+    echo "<th><b>Address</b></th>";
+    echo "<th><b>City</b></th>";
+    echo "<th><b>State</b></th>";
+    echo "<th><b>ZIP</b></th>";
+    echo "<th><b>Phone</b></th>";
+    echo "<th><b>Cellphone</b></th>";
+    echo "<th><b>Email</b></th>";
   	echo "</tr>";
     $r = mysqli_query($dbc, "SELECT * FROM employees");
     $numrows = mysqli_num_rows($r);
@@ -34,7 +40,7 @@ if(!isset($_SESSION["loggedIn"])) {
 if($numrows != 0){
     while ( $row = mysqli_fetch_array($r))
     {
-        echo "<tr>";
+        echo "<tr class='outputrow'>";
     		echo "<td>".$row['EMPLOYEEID']."</td>";
     		echo "<td>".$row['EMPFIRSTNAME']."</td>";
         echo "<td>".$row['EMPLASTNAME']."</td>";

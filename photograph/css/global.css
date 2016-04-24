@@ -1,6 +1,32 @@
 /* ---------------------------*/
 /* ----->>> =GLOBAL <<<-------*/
 /* ---------------------------*/
+body
+{
+  background-image: url("../img/sayagata-400px.png");
+}
+table.output
+{
+  padding: 25px;
+  text-align: center;
+  font-size: 1.1em;
+  font-family: sans-serif;
+  border-collapse: collapse;
+  border-color: gray;
+  background-color: white;
+}
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+tr.outputrow:nth-child(even)
+{
+  background-color: #f2f2f2
+}
+tr.outputrow:hover
+{
+  background-color: #929292
+}
 
 .logo
 {
@@ -9,8 +35,14 @@
   left: 5%;
   width: 200px;
   height: 200px;
-  /*max-width: 100px;
-  max-height: 58.3px;*/
+}
+.logohorizontal
+{
+  position: absolute;
+  top: 5px;
+  left: 5%;
+  width: 256px;
+  height: 40px;
 }
 div.relative
 {

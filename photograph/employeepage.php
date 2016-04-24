@@ -5,7 +5,7 @@ if(!isset($_SESSION["loggedIn"])) {
     echo "<h1 align='center'>Access Denied!</h1>";
     die('');
 }
-echo "<h1>Welcome, ";
+echo "<br><br><h1>Welcome, ";
 echo $_SESSION["Username"];
 echo "</h1>";
 ?>
@@ -17,12 +17,17 @@ echo "</h1>";
   <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
 </head>
 <body>
-  <table class="navbar">
-    <tr>
-      <td><a href="employeepage.php" id="navbutton">Home</a></td>
-      <td><a href="logout.php" id="navbutton">Logout</a></td>
-    </tr>
-  </table>
+  <div class="navbg">
+    <a href="employeepage.php"><img class="logohorizontal" src="img/apphotohoriz.png"></a>
+    <table class="navbar">
+      <tr>
+        <td><a href="employeepage.php" id="navbutton">Home</a></td>
+        <td><a href="findperson.php" id="navbutton">Find</a></td>
+        <td><a href="payment.php" id="navbutton">Bill</a></td>
+        <td><a href="logout.php" id="navbutton">Logout</a></td>
+      </tr>
+    </table>
+  </div>
     <table align="center">
       <tr>
         <td><h3>Cameras</h3></td>

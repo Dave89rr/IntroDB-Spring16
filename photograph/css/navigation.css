@@ -1,8 +1,19 @@
 table.navbar
 {
   position: absolute;
-  top: -4px;
+  top: 0px;
   right: 10%;
+  background-color: transparent;
+}
+
+div.navbg
+{
+  background-color: #C4C4C4;
+  position: absolute;
+  top: -2px;
+  left: 0px;
+  height: 50px;
+  width: 100%;
 }
 
 #navbutton
