@@ -61,6 +61,14 @@ echo "</h1>";
         <td><a href="outputs/employeeoutput.php" class="button button1">Employee List</a></td>
         <td><a href="forms/employeeuserform.php" class="button">New Employee</a></td>
       </tr>
+      <tr>
+        <td><h3>Orders</h3></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="outputs/orderoutput.php" class="button button1">Order List</a></td>
+        <td><a href="forms/orderform.php" class="button">New Order</a></td>
+      </tr>
     </table>
   </body>
 </html>
