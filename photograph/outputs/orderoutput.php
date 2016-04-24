@@ -40,10 +40,15 @@ if($numrows != 0){
 	{
     echo "<tr class='outputrow'>";
 		echo "<td>".$row['CAMERAID']."</td>";
-    echo "<td>".$row['SHOTCOUNT']."</td>";
-    echo "<td>".$row['CAMERATYPE']."</td>";
-    echo "<td>".$row['BATTERIES']."</td>";
-    echo "<td>".$row['PRIMARYLENSE']."</td>";
+    echo "<td>".$row['CLIENTID']."</td>";
+    echo "<td>".$row['EMPLOYEEID']."</td>";
+    echo "<td>".$row['PACKAGEID']."</td>";
+    echo "<td>".$row['VENUEID']."</td>";
+    echo "<td>".$row['CAMERAID']."</td>";
+    echo "<td>".$row['EVENTTYPE']."</td>";
+    echo "<td>".$row['EVENTDATE']."</td>";
+    echo "<td>".$row['ACCESSORIES']."</td>";
+    echo "<td>".$row['SPECIALREQUESTS']."</td>";
 		echo "</tr>";
 	}
 } else {
