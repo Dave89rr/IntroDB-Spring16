@@ -2,6 +2,25 @@
 /* ----->>> =GLOBAL <<<-------*/
 /* ---------------------------*/
 
+.logo
+{
+  position: absolute;
+  top: 8%;
+  left: 5%;
+  width: 200px;
+  height: 200px;
+  /*max-width: 100px;
+  max-height: 58.3px;*/
+}
+div.relative
+{
+  font-family:Arial;
+  font-size:1em;
+  position: absolute;
+  top: 65px;
+  right: 46%;
+  align-self: center;
+}
 h1
 {
   text-align:center;
@@ -22,15 +41,6 @@ a,p
   font-weight:normal;
 }
 
-div.relative
-{
-  font-family:Arial;
-  font-size:1em;
-  position: absolute;
-  top: 65px;
-  right: 46%;
-  align-self: center;
-}
 
 .button {
     background-color: #4CAF50;
