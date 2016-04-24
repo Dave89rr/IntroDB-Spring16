@@ -1,20 +1,14 @@
-Client Values examples:
+INSERT INTO CLIENTS(CLIENTID, FIRSTNAME, LASTNAME, ADDRESS, CITY, STATE, ZIP, PHONE, CELLPHONE, REFERRAL, EMAIL) VALUES
+(3, 'Chris', 'Wootton', '256 nowhereville', 'whatevercity', 'GA', '35894', '2552584698', '1200456789','','woot@email.com'),
+(4, 'Sam', 'Adams', '255 Somewhereville', 'whatevercity', 'GA', '35894', '2552584699', '1070000654', '', 'adams@email.com'),
+(5, 'James', 'Bond', '007 Hiddenville', 'Atlanta', 'GA', '35894', '2552584700', '1238765438', '', '007bond@mi6.com'),
+(6, 'Peyton', 'Mann', '0321 Swimmerville', 'Surfrcity', 'GA','35894', '2552584701','8705602200', '1', 'gold@olympics.com');
 
-
- Insert INTO Client VALUES(
-  seqCLID.nextval, 'Chris', 'Wootton', '256 nowhereville', 'GA', 'whatevercity', '35894', '2552584698', 0000);
-    seqCLID.nextval, 'Sam', 'Adams', '255 Somewhereville', 'GA', 'whatevercity', '35894', '2552584699', 0000);
-  seqCLID.nextval, 'James', 'Bond', '007 Hiddenville', 'GA', 'Atlanta', '35894', '2552584700',
- 0000);
-  seqCLID.nextval, 'Peyton', 'Mann', '0321 Swimmerville', 'GA', 'Surfrcity', '35894', '2552584701',
- 0000);
-
-
-  Insert INTO PicPackage VALUES(
- seqPID.nextval,null,'$80','20','$80', '10', '15', '10', '1');
-seqPID.nextval,null,'$60','20','$80', '15', '10', '10', '1');
-seqPID.nextval,null,'$60','80','$80', '10', '10', '15', '1');
-seqPID.nextval,null,'$60','20','$20', '10', '10', '10', '1');
+INSERT INTO PACKAGES (PACKAGEID, PRICE, DEPOSIT, TOTAL, P4X6, P5X7, P8X11, CANVAS, DIGITALCOPY, ONLINEALBUM, WALLETS) VALUES
+(1, '$80', '$20', '$80', '10', '15', '10', 'Y', 'N', ''),
+(2, '$50', '$60', '$20', '40', '15', '1', 'Y', 'N', ''),
+(3, '$40', '$60', '$80', '5', '10', '1', 'N', 'N', ''),
+(4, '$90', '$60', '$20', '2', '10', '20', 'N', 'N','');
   
   Insert INTO Payment VALUES(
  seqCLID.nextval, 'Cust_1211', 'TR_1244', 'VISA', 'Wells Fargo', '4727 01234 9009', '07-04- 17', 'FULL',);
