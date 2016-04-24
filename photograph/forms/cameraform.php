@@ -25,8 +25,8 @@ if(!isset($_SESSION["loggedIn"])) {
       </table>
     </div>
     <br><br>
-		<h1>New Camera Form</h1>
-		<form action="../processing/processingcameras.php" method="post">
+		<h1>New Camera Information</h1>
+		<form action="../processing/processingcameras.php" method="post" class="info">
 			<table>
 				<tr>
 					<td>*ShotCount:</td><td><input type="text" name="SHOTCOUNT" size="20" maxlength="50" /></td>

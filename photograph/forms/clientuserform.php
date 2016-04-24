@@ -24,8 +24,8 @@ if(!isset($_SESSION["loggedIn"])) {
       </table>
     </div>
     <br><br>
-		<h1>New Client Form</h1>
-		<form action="../processing/processingclients.php" method="post">
+		<h1>New Client Information</h1>
+		<form action="../processing/processingclients.php" method="post" class="info">
 			<table>
 				<tr>
 					<td>*First Name:</td><td><input type="text" name="FIRSTNAME" size="20" maxlength="50" /></td>
