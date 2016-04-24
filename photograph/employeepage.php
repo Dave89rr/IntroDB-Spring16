@@ -30,6 +30,14 @@ echo "</h1>";
   </div>
     <table align="center">
       <tr>
+        <td><h3>New Gig</h3></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="outputs/.php" class="button button1">What will this do? IDK</a></td>
+        <td><a href="forms/combinedform.php" class="button">New Gig</a></td>
+      </tr>
+      <tr>
         <td><h3>Cameras</h3></td>
         <td></td>
       </tr>
