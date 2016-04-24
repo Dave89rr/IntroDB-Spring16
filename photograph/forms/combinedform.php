@@ -24,7 +24,7 @@ if(!isset($_SESSION["loggedIn"])) {
       </table>
     </div>
     <br><br>
-		<h1>New Client Information</h1>
+		<h1>Client Information</h1>
 		<form action="../processing/processingcombined.php" method="post" class="info">
 			<table>
 				<tr>
@@ -52,11 +52,35 @@ if(!isset($_SESSION["loggedIn"])) {
 					<td>CellPhone:</td><td><input type="text" name="CELLPHONE" size="20" maxlength="50" /></td>
 				</tr>
 				<tr>
-					<td>Referral:</td><td><input type="text" name="REFERRAL" size="20" maxlength="100"/></td>
+					<td>Referral?:</td><td><input type="text" name="REFERRAL" size="20" maxlength="100"/></td>
 				</tr>
 				<tr>
 					<td>*Email:</td><td><input type="text" name="EMAIL" size="20" maxlength="100"/></td>
-				</tr>
+				</tr>  
+        <tr>
+          <td>*Venue Name:</td><td><input type="text" name="VENUENAME" size="20" maxlength="50" /></td>
+        </tr>
+        <tr>
+          <td>*Venue Address:</td><td><input type="text" name="VENUEADDRESS" size="20" maxlength="50" /></td>
+        </tr>
+        <tr>
+          <td>City:</td><td><input type="text" name="VENUECITY" size="20" maxlength="50" /></td>
+        </tr>
+        <tr>
+          <td>*State:</td><td><input type="text" name= "VENUESTATE" size="20" maxlength="50" /></td>
+        </tr>
+        <tr>
+          <td>*ZIP:</td><td><input type="text" name= "VENUEZIP" size="20" maxlength="50" /></td>
+        </tr>
+        <tr>
+          <td>*Number:</td><td><input type="text" name="VENUENUMBER" size="20" maxlength="50" /></td>
+        </tr>
+        <tr>
+          <td>Contact Name:</td><td><input type="text" name="VENUECONTACTNAME" size="20" maxlength="50" /></td>
+        </tr>
+        <tr>
+          <td>*Type:</td><td><input type="text" name="VENUETYPE" size="20" maxlength="50" /></td>
+        </tr>
 				<tr>
 					<td></td><td><input type="submit" name="submit" value="Submit" /></td>
 				</tr>
