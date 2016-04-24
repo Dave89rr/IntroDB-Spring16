@@ -1,8 +1,8 @@
 <?php
 session_start();
 if(!isset($_SESSION["loggedIn"])) {
-    echo "<meta http-equiv='refresh' content='1;url=/login.html'/>";
-    echo "<h1 align='center'>Access Denied!</h1>";
+    echo "<meta http-equiv='refresh' content='1;url=login.html'/>";
+    echo "<br><br><br><br><h1 class='deny' align='center'>Access Denied!</h1>";
     die('');
 }
 	include("connection.php");
@@ -19,6 +19,4 @@ if(!isset($_SESSION["loggedIn"])) {
   </div>
   <br><br>";
   echo "<link rel='stylesheet' type='text/css' href='css/master.css'/>";
-
-
   ?>

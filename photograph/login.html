@@ -6,21 +6,18 @@
 <body>
 	<div class="fullscreen-bg">
     <video loop muted autoplay poster="img/videoframe.jpg" class="fullscreen-bg__video">
-				<!-- FOLLOWING VIDEOS ARE A SAMPLE. MUST BE REPLACED  -->
-        <!-- <source src="video/big_buck_bunny.webm" type="video/webm"> -->
-        <source src="http://www.sample-videos.com/video/mp4/720/big_buck_bunny_720p_1mb.mp4" type="video/mp4">
-        <!-- <source src="video/big_buck_bunny.ogv" type="video/ogg"> -->
+        <source src="img/sparklyloop.mp4" type="video/mp4">
     </video>
 	</div>
 	<div class="login">
-	<h1>Login</h1>
+	<h1 style="color:white;">Login</h1>
 		<form action="login.php" method="post" align="center">
 			<table align="center">
 				<tr>
-					<td>Email:</td><td><input type="text" name= "login_email" size="20" maxlength="50" /></td>
+					<td class="loginBox">Email:</td><td><input type="text" name= "login_email" size="20" maxlength="50" /></td>
 				</tr>
 				<tr>
-					<td>Password:</td><td><input type="password" name="login_password" maxlength="50"></textarea></td>
+					<td class="loginBox">Password:</td><td><input type="password" name="login_password" maxlength="50"></textarea></td>
 				</tr>
 			</table>
 			<p><input type="submit" name="submit" value="Submit" /></p>
