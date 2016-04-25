@@ -13,6 +13,7 @@ if(!isset($_SESSION["loggedIn"])) {
         <td><a href='../employeepage.php' id='navbutton'>Home</a></td>
         <td><a href='../findperson.php' id='navbutton'>Find</a></td>
         <td><a href='../payment.php' id='navbutton'>Bill</a></td>
+        <td><a href='forms/combinedform.php' id='navbutton'>+Event</a></td>
         <td><a href='../logout.php' id='navbutton'>Logout</a></td>
       </tr>
     </table>

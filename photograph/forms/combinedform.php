@@ -19,6 +19,7 @@ if(!isset($_SESSION["loggedIn"])) {
           <td><a href="../employeepage.php" id="navbutton">Home</a></td>
           <td><a href="../findperson.php" id="navbutton">Find</a></td>
           <td><a href="../payment.php" id="navbutton">Bill</a></td>
+          <td><a href="forms/combinedform.php" id="navbutton">+Event</a></td>
           <td><a href="../logout.php" id="navbutton">Logout</a></td>
         </tr>
       </table>
@@ -56,7 +57,7 @@ if(!isset($_SESSION["loggedIn"])) {
 				</tr>
 				<tr>
 					<td>*Email:</td><td><input type="text" name="EMAIL" size="20" maxlength="100"/></td>
-				</tr>  
+				</tr>
         <tr>
           <td>*Venue Name:</td><td><input type="text" name="VENUENAME" size="20" maxlength="50" /></td>
         </tr>
