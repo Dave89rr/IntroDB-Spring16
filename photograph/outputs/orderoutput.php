@@ -27,6 +27,7 @@ if(!isset($_SESSION["loggedIn"])) {
 	echo "<th><b>Client ID</b></th>";
   echo "<th><b>Employee ID</b></th>";
   echo "<th><b>Package ID</b></th>";
+  echo "<th><b>Venue ID</b></th>";
   echo "<th><b>Camera ID</b></th>";
   echo "<th><b>Event Type</b></th>";
   echo "<th><b>Event Date</b></th>";
